@@ -21,7 +21,7 @@ class Macvim < Formula
   version '7.3-64'
   md5 '5bdc0bc618b3179130f846f8d0f81283'
 
-  head 'https://github.com/b4winckler/macvim.git', :branch => 'master'
+  head 'https://github.com/rtgibbons/macvim.git', :branch => 'split-browser'
 
   def options
   [
