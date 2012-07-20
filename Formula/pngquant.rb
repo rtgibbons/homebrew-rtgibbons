@@ -1,6 +1,6 @@
 require 'formula'
 
-class Pngnq < Formula
+class Pngquant < Formula
   url 'https://github.com/pornel/improved-pngquant/tarball/1.7.2'
   head 'https://github.com/pornel/improved-pngquant.git', :branch => 'master'
   homepage 'http://pngquant.org'
