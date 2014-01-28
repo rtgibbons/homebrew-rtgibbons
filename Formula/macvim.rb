@@ -7,7 +7,7 @@ class Macvim < Formula
   version '7.4-72'
   sha1 '3fb5b09d7496c8031a40e7a73374424ef6c81166'
 
-  head 'https://github.com/alloy/macvim.git', :branch => 'split-browser'
+  head 'https://github.com/rtgibbons/macvim.git', :branch => 'split-browser'
 
   option "custom-icons", "Try to generate custom document icons"
   option "override-system-vim", "Override system vim"
@@ -121,15 +121,6 @@ class Macvim < Formula
 
   def caveats
     s = ''
-    s += <<-EOS.undent
-      MacVim.app installed to:
-        #{prefix}
-
-      Run the following to make MacVim available as a Mac OS X application:
-          brew linkapps
-      or:
-          brew linkapps --local
-    EOS
     if build.with? "python" and build.with? "python3"
       s += <<-EOS.undent
 
